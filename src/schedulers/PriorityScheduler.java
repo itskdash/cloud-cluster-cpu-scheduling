@@ -10,6 +10,7 @@ import models.ProcessState;
 public class PriorityScheduler extends Scheduler {
 
     private final List<Process> priorityQueue;
+    private metrics.GanttChart gantt;
 
     public PriorityScheduler() {
         this(  0);
@@ -30,7 +31,7 @@ public class PriorityScheduler extends Scheduler {
         gantt = new metrics.GanttChart();
         priorityQueue.clear();
 
-        List<process> allProcesses = new ArrayList<>(processes);
+        List<Process> allProcesses = new ArrayList<>(processes);
         allProcesses.sort(Comparator.comparingInt(Process::getArrivalTime).thenComparingInt(Process::getPid));
 
         int nextArrival = 0;
@@ -84,7 +85,7 @@ public class PriorityScheduler extends Scheduler {
         if (process == null) {
             throw new IllegalArgumentException("Process cannot be null.");
         }
-        if (process.getRemainigTime() >0 && !priorityQueue.contains(process)) {
+        if (process.getRemainingTime() >0 && !priorityQueue.contains(process)) {
             process.setState(ProcessState.READY);
             priorityQueue.add(process);
         }
