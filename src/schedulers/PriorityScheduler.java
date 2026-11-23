@@ -12,7 +12,7 @@ public class PriorityScheduler extends Scheduler {
     private final List<Process> priorityQueue;
 
     public PriorityScheduler() {
-        this(contextSwitchTime : 0);
+        this(  0);
     }
 
     public PriorityScheduler(int contextSwitchTime) {

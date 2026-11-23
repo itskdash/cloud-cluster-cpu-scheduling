@@ -12,7 +12,7 @@ public abstract class Scheduler {
     protected GanttChart ganttChart;
 
     protected Scheduler(){
-        this(contextSwitchTime : 0);
+        this( 0);
     }
 
     protected Scheduler(int contextSwitchTime) {
