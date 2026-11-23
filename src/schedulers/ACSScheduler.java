@@ -1,5 +1,5 @@
 package schedulers;
 
-public class ACSScheduler implements Scheduler {
+public class ACSScheduler extends Scheduler {
 
 }
