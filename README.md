@@ -27,6 +27,7 @@ src/
 ├── models/
 │   ├── Process.java              # Process entity (PID, arrival, burst, priority, tier, metrics)
 │   └── SchedulingResult.java     # Stores Gantt slices, step snapshots, and average metrics
+│   └── TestCases.java            # Make Test Cases like (Starvation & Demotion)
 └── schedulers/
     ├── ACSScheduler.java         # Two-tier RR + Aging Priority scheduler implementation
     └── SJFScheduler.java         # Preemptive Shortest Remaining Time First (SJF) implementation
