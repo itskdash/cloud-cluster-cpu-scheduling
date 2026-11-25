@@ -1,4 +1,4 @@
-# Schedul — CPU Scheduling Simulator
+# Schedule — CPU Scheduling Simulator
 
 A modular Java & JavaFX desktop application for simulating, visualizing, and comparing CPU scheduling algorithms—specifically pitting **Preemptive Shortest Job First (SJF)** against a two-tier **Adaptive / Aging CPU Scheduler (ACS)** with full step-by-step state tracking[cite: 1, 2, 5, 6].
 
