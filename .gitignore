@@ -1,12 +1,6 @@
-# Visual Studio
 .vs/
-
-# Java compiled files
 *.class
-
-# Build folders
 bin/
 out/
-
-# VS Code settings
+javafx/
 .vscode/
